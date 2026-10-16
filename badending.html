@@ -31,9 +31,13 @@
             your investigation comes to an end.
         </p>
 
-        <p>Health: 0</p>
-        <p>Inventory: Zeus's Gauntlet</p>
-        <p>Time: Day 2</p>
+        
+<p>Current HP: <span data-number="hp"></span></p>
+
+<p>Inventory: <span id="inventory"></span></p>
+
+<p>Time: Day 2</p>
+
 
         <figure>
             <img src="badending.jpg" alt="Hades captures the you" width="400" height="400">
@@ -44,13 +48,14 @@
 
         <p>You failed to rescue Apollo.</p>
 
-        <a href="index.html"><button>Try Again</button></a>
+        <button onclick="resetGame()">Start Over</button>
     </section>
 </main>
 
 <footer>
     <p>Bad Ending</p>
 </footer>
+  <script src="game.js"></script>
 </body>
 </html>
 

@@ -31,9 +31,13 @@
             to Olympus.
         </p>
 
-        <p>Health: 100</p>
-        <p>Inventory: Zeus's Gauntlet</p>
-        <p>Time: Day 2</p>
+        
+<p>Current HP: <span data-number="hp"></span></p>
+
+<p>Inventory: <span id="inventory"></span></p>
+
+<p>Time: Day 2</p>
+
 
         <figure>
             <img src="goodending.jpg" alt="Apollo has been rescued" width="400" height="550">
@@ -44,13 +48,14 @@
 
         <p>You successfully completed your investigation.</p>
 
-        <a href="index.html"><button>Play Again</button></a>
+        <button onclick="resetGame()">Start Over</button>
     </section>
 </main>
 
 <footer>
     <p>Good Ending</p>
 </footer>
+  <script src="game.js"></script>
 </body>
 </html>
 

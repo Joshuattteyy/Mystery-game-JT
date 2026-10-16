@@ -21,36 +21,54 @@
 </header>
 
 <main>
-    <section>
-        <h2>The Hidden Passage</h2>
-
-        <p>
-            You search the altar and discover Zeus's gauntlet.
-            Behind the altar, you find a hidden passage.
-            The passage is sealed, but the gauntlet allows you
-            to enter it. You must decide whether to follow the
-            passage into the unknown or return to the temple.
-        </p>
-
-        <p>Health: 100</p>
-        <p>Inventory: Zeus's Gauntlet</p>
-        <p>Time: Day 1</p>
-
         <figure>
             <img src="hiddenpassage.jpg" alt="A hidden passage inside the temple" width="500" height="400">
             <figcaption>A mysterious passage leads away from the temple.</figcaption>
         </figure>
 
-        <p>What will you do?</p>
+        <section>
+    <h2>Hidden Passage</h2>
 
-        <a href="Underworld.html"><button>Follow the passage</button></a>
-        <a href="temple.html"><button>Go back to the temple</button></a>
-    </section>
+    <p>
+        You discover a hidden passage inside the temple.
+        The passage is sealed, and you need Zeus's Gauntlet to enter.
+    </p>
+
+    <p>Current HP: <span data-number="hp"></span></p>
+
+    <p>Inventory: <span id="inventory"></span></p>
+
+    <p>Time: Day 1</p>
+
+    <div data-needs="zeus_gauntlet">
+        <p>
+            You use Zeus's Gauntlet to open the sealed passage.
+            It leads deeper into the Underworld.
+        </p>
+
+        <a href="underworld.html">
+            <button>Follow the passage</button>
+        </a>
+    </div>
+
+    <div data-missing="zeus_gauntlet">
+        <p>
+            The passage is sealed. You need Zeus's Gauntlet to open it.
+        </p>
+
+        <a href="temple.html">
+            <button>Return to the temple</button>
+        </a>
+    </div>
+
+</section>
+
 </main>
 
 <footer>
     <p>End of Hidden Passage</p>
 </footer>
+  <script src="game.js"></script>
 </body>
 </html>
 

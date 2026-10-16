@@ -31,26 +31,55 @@
             somewhere dangerous.
         </p>
 
-        <p>Health: 100</p>
-        <p>Inventory: Clue about Apollo</p>
-        <p>Time: Day 1</p>
+        
+<p>Current HP: <span data-number="hp"></span></p>
+
+<p>Inventory: <span id="inventory"></span></p>
+
+<p>Time: Day 1</p>
+
 
         <figure>
             <img src="temple.jpg" alt="Temple" width="500" height="400">
             <figcaption>Apollo's temple holds important clues.</figcaption>
         </figure>
 
-        <p>Which path will you choose?</p>
+       
+<p>You arrive at Apollo's temple. You can search the altar or follow the River Styx.</p>
 
-        <a href="hiddenpassage.html"><button>Search the altar</button></a>
-        <a href="cerberus.html"><button>Follow the River Styx</button></a>
-        <a href="apollosroom.html"><button>Return to Apollo's Room</button></a>
+<p>The altar may contain something useful.</p>
+
+<button onclick="addItem('zeus_gauntlet')">
+    Search the altar and take Zeus's Gauntlet
+</button>
+
+<div data-needs="zeus_gauntlet">
+    <p>You found Zeus's Gauntlet! It allows you to open the hidden passage.</p>
+
+    <a href="hiddenpassage.html">
+        <button>Enter the hidden passage</button>
+    </a>
+</div>
+
+<div data-missing="zeus_gauntlet">
+    <p>You have not found Zeus's Gauntlet yet. You cannot enter the hidden passage.</p>
+</div>
+
+<a href="cerberus.html">
+    <button>Follow the River Styx</button>
+</a>
+
+<a href="apollosroom.html">
+    <button>Return to Apollo's Room</button>
+</a>
+
     </section>
 </main>
 
 <footer>
     <p>End of Temple</p>
 </footer>
+  <script src="game.js"></script>
 </body>
 </html>
 
